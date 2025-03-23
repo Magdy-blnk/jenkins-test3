@@ -67,7 +67,7 @@ pipeline {
                                 echo "Migration files changed! Running necessary actions..."
                                 // Trigger database migration or any other necessary action
                             } else {
-                                echo "No migration files changed. Skipping migration step."
+                                echo "No migration files changed. Skipping migration step. for repo jenkins-test3"
                             }
 
                     } else if (REPO_NAME == "jenkins-test") {
@@ -79,7 +79,7 @@ pipeline {
                                 echo "Migration files changed! Running necessary actions..."
                                 // Trigger database migration or any other necessary action
                             } else {
-                                echo "No migration files changed. Skipping migration step."
+                                echo "No migration files changed. Skipping migration step. for repo jenkins-test"
                             }
                         
                         
