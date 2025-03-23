@@ -22,8 +22,8 @@ pipeline {
                 script {
                     def allowedBranches = [
                         "repo1": ["main", "dev"],
-                        "repo2": ["develop"],
-                        "repo3": ["staging"]
+                        "repo2": ["main"],
+                        "repo3": ["main"]
                     ]
                     
                     if (!allowedBranches.containsKey(REPO_NAME) || !(BRANCH_NAME in allowedBranches[REPO_NAME])) {
